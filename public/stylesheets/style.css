@@ -95,3 +95,72 @@ input[type=text] {
 .error {
   color: rgb(236, 15, 15);
 }
+
+/* Search Bar Container */
+form.search-form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Search Input */
+form.search-form input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  border: 1px solid #E7E7E7;
+  border-radius: 2px;
+  margin-right: 10px; 
+  transition: 0.3s;
+}
+
+form.search-form input[type="text"]:focus {
+  outline: none;
+  border-color: #019875;
+  box-shadow: 0 0 5px rgba(1, 152, 117, 0.4); 
+}
+
+/* Search Button */
+form.search-form button {
+  color: white;
+  background-color: #019875;
+  padding: 10px 14px;
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+form.search-form button:hover {
+  background-color: #01b189;
+}
+
+/* Pagination styling */
+.pagination {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination a {
+  color: #019875;
+  text-decoration: none;
+  padding: 8px 12px;
+  border: 1px solid #e7e7e7;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.pagination a.active {
+  background-color: #019875;
+  color: white;
+}
+
+.pagination a:hover {
+  background-color: #01b189;
+  color: white;
+}
